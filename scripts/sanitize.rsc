@@ -27,9 +27,3 @@ delete.field = {bdsk-url-1}
 delete.field = {bdsk-url-2}
 delete.field = {bdsk-url-3}
 delete.field = {bdsk-url-4}
-
-%%%
-%%% Delete fields supplied for user to override key generation
-%%%
-delete.field = {asdf}
-delete.field = {xkcd}

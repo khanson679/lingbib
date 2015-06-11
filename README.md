@@ -20,9 +20,11 @@ By including all known information in the database, the `.bib` file will hopeful
 
 The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Committee of Editors of Linguistics Journals][CELxJ].
 
+**DETAILS TO COME**
+
 ## Using the `.bib` file
 
-
+**DETAILS TO COME**
 
 ## Contributing
 
@@ -34,7 +36,7 @@ If you are not sure how to use `git` and GitHub to add an entry and don't have t
 
 ### Submit a pull request
 
-
+**DETAILS TO COME**
 
 ### Join the team
 

@@ -27,3 +27,11 @@ delete.field = {bdsk-url-1}
 delete.field = {bdsk-url-2}
 delete.field = {bdsk-url-3}
 delete.field = {bdsk-url-4}
+
+%%%
+%%% Delete extra fields from JabRef
+%%%
+delete.field = {owner}
+delete.field = {timestamp}
+delete.field = {file}
+delete.field = {__markedentry}

@@ -7,7 +7,7 @@
 - Finish the README file.
   - Add comments on the unified style sheet.
   - Add information on how to use the database.
-	- Add information on how to use `.bib` file in one's `.tex` files.
+	- Add information on how to use the `.bib` file in one's `.tex` files.
 	- Add information on how to maintain a personal copy of the database alongside the main copy.
   - Add information on how to submit a pull request.
 

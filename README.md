@@ -48,4 +48,4 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [contrib]: https://github.com/lingbib/lingbib#contributing
 [pr]: https://github.com/lingbib/lingbib#submit-a-pull-request
 [issue]: https://github.com/lingbib/lingbib/issues
-[email]: mailto:adam.liter@gmail.com;khanson679@gmail.com
+[email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

@@ -1,0 +1,12 @@
+# Have git try to autodetect all files that are text and do CRLF-LF
+# conversion when necessary
+* text=auto
+
+# Explicitly declare some types of files to do CRLF-LF conversion
+*.md text
+*.sh text
+*.bib text
+*.rsc text
+
+# Don't convert any PDFs
+*.pdf binary

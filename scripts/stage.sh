@@ -15,5 +15,8 @@ bibtool -r scripts/sanitize new.bib lingbib.bib -o lingbib.bib
 # Then remove the new entries
 rm new.bib
 
+# Update macro and refs file
+bibtool -r scripts/ref-extraction.rsc lingbib.bib -o MacrosAndRefs.txt
+
 # Then stage the new changes
 git add lingbib.bib

@@ -6,6 +6,11 @@ resource = {biblatex.rsc}
 resource = {format.rsc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Sort for merging linbib.bib and new.bib
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+sort = on
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Sanitizing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -36,3 +41,9 @@ delete.field = {owner}
 delete.field = {timestamp}
 delete.field = {file}
 delete.field = {__markedentry}
+
+%%%
+%%% Delete fields supplied for user to override key generation
+%%%
+delete.field = {asdf}
+delete.field = {xkcd}

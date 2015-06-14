@@ -16,6 +16,11 @@ new.field.type = {asdf}
 new.field.type = {xkcd}
 
 %%%
+%%% Preserve key case
+%%%
+preserve.key.case = on
+
+%%%
 %%% More words to ignore in the title search in addition to the defaults
 %%% see `defaults.rsc`
 %%%

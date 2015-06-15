@@ -14,12 +14,13 @@ if ! git remote | grep upstream > /dev/null; then
 fi
 
 # Pull from the upstream remote.
-if ! git pull --rebase upstream > /dev/null; then
+if ! git pull --rebase upstream master > /dev/null; then
 	echo "ERROR:"
 	echo "There were merge conflicts when trying to run \
-	'git pull --rebase upstream'"
-	echo "Please run 'git pull --rebase upstream' and resolve the conflicts"
-	echo "Then you can run this script again to update your personal \
+	'git pull --rebase upstream master'"
+	echo "Please run 'git pull --rebase upstream master' and resolve the \
+	conflicts"
+	echo "Then you can rerun this script to update your personal \
 	copy of the database"
 	exit 1
 fi

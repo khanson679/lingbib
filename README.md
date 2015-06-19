@@ -1,5 +1,7 @@
 # lingbib
 
+## Overview
+
 This is a repository for open and collaborative management of a comprehensive linguistics bibliography.
 
 Everyone who is a linguist and a user of (La)TeX eventually goes through the process of creating and maintaining their own `.bib` file for references. In our opinion, this is wasted effort. Instead, we could all contribute to the maintenance of a single, comprehensive bibliography file for linguistics. In addition to saving everyone some time, another advantages of this approach is that there will be, in principle, fewer errors in the database, since more people will be looking things over.
@@ -7,6 +9,14 @@ Everyone who is a linguist and a user of (La)TeX eventually goes through the pro
 If you are interested in using the bibliography file, you might wish to read the sections below that detail [our approach to entering data into the databse][phil], [that comment on the unified style sheet for linguistics][ussl], and that detail [how to use the database in your `.tex` files][use].
 
 If you are interested in contributing to the maintenance of the bibliographic database, you should also read the sections that detail [our approach to entering data into the databse][phil] and [that comment on the unified style sheet for linguistics][ussl] as well as the section on [contributing][contrib].
+
+## Support
+
+If you have general comments or questions about lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain lingbib. Feel free to also just drop by and say *hi*!
+
+[![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lingbib/lingbib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+You can also report problems and bugs as well as suggest improvements via [GitHub issues][issue].
 
 ## Philosophy
 

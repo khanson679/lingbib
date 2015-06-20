@@ -12,7 +12,7 @@ if ! git diff-files --quiet; then
     echo "When you are back on this branch, you can unstash them with \
     'git stash pop'."
     echo "If you want to commit the changes instead, you must stage \
-    them with 'git add' and the commit them with 'git commit'."
+    them with 'git add' and then commit them with 'git commit'."
     err=1
 fi
 # Check for staged but uncommitted changes

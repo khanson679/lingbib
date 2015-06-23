@@ -22,6 +22,7 @@ if ! git pull --rebase upstream master > /dev/null; then
 	conflicts"
 	echo "Then you can rerun this script to update your personal \
 	copy of the database"
+	git reset --hard ORIG_HEAD
 	exit 1
 fi
 
@@ -32,13 +33,16 @@ fi
 # copy from the first .bib file, so 'lingbib-personal.bib' *must* come
 # first in order for the entry with the link to the PDF file to be kept.
 
+master="lingbib-master.bib"
+personal=${1}
+
 echo "BibTool produces warnings each time it finds a possible duplicate entry."
 echo "Do you wish to see these warnings?"
 echo "Hit '1' and then 'ENTER' for yes or '2' and then 'ENTER' for no."
 select yn in "yes" "no"; do
 	case $yn in
-		yes ) bibtool -r scripts/personal-merge.rsc lingbib-personal.bib lingbib.bib -o lingbib-personal.bib; break;;
-		no ) bibtool -q -r scripts/personal-merge.rsc lingbib-personal.bib lingbib.bib -o lingbib-personal.bib; break;;
+		yes ) bibtool -r scripts/personal-merge.rsc $personal $master -o $personal; break;;
+		no ) bibtool -q -r scripts/personal-merge.rsc $personal $master -o $personal; break;;
 	esac
 done
 

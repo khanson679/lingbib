@@ -28,7 +28,7 @@ __date__ =    "6/23/2015"
 if __name__ == '__main__':
     args = docopt(__doc__, help=True)
 
-    print(args)
+    # print(args)
 
     if args['FILE']:
         # run script in debug mode

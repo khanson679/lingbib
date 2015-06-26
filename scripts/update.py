@@ -15,15 +15,16 @@ Options:
 
 from __future__ import print_function
 from subprocess import call
+import sys
 
-from docopt import docopt
+from lib.docopt import docopt
 
 __author__ =  "Kenneth Hanson"
 __date__ =    "6/23/2015"
 
 
-if __name__ == '__main__':
-    args = docopt(__doc__, help=True)
+def main(argv):
+    args = docopt(__doc__, argv=argv, help=True)
 
     # print(args)
 
@@ -35,3 +36,6 @@ if __name__ == '__main__':
     # call(['sh', '-n', 'scripts/update_personal_db.sh', db])
     print("Calling scripts/update_personal_db.sh with '{}'".format(db))
     print("TODO: fix script so that it can be called properly")
+
+if __name__ == '__main__':
+  main(sys.argv)

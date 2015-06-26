@@ -19,7 +19,7 @@ Options:
 from __future__ import print_function
 from subprocess import call
 
-from docopt import docopt
+from lib.docopt import docopt
 
 __author__ =  "Kenneth Hanson"
 __date__ =    "6/23/2015"

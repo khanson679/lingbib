@@ -125,3 +125,6 @@ sympy-plots-for-*.tex/
 
 ### Sublime Text per-user files
 *.sublime-workspace
+
+### Compiled Python modules
+*.pyc

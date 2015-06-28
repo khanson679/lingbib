@@ -33,7 +33,7 @@ fi
 # copy from the first .bib file, so 'lingbib-personal.bib' *must* come
 # first in order for the entry with the link to the PDF file to be kept.
 
-master="lingbib-master.bib"
+master="master-biblatex.bib"
 personal=${1}
 
 echo "BibTool produces warnings each time it finds a possible duplicate entry."

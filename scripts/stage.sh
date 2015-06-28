@@ -6,7 +6,7 @@
 bibtool -r scripts/keygen.rsc new.bib -o new.bib
 
 # Then, merge new.bib with lingbib.bib
-bibtool -r scripts/sanitize new.bib lingbib.bib -o lingbib.bib
+bibtool -r scripts/sanitize new.bib master-biblatex.bib -o master-biblatex.bib
 
 # Next, generate a BibTeX-compliant entry
 
@@ -16,7 +16,7 @@ bibtool -r scripts/sanitize new.bib lingbib.bib -o lingbib.bib
 rm new.bib
 
 # Update macro and refs file
-bibtool -r scripts/ref-extraction.rsc lingbib.bib -o MacrosAndRefs.txt
+bibtool -r scripts/ref-extraction.rsc master-biblatex.bib -o MacrosAndRefs.txt
 
 # Then stage the new changes
-git add lingbib.bib
+git add master-biblatex.bib

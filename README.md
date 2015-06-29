@@ -6,11 +6,11 @@ Everyone linguist who is a user of (La)TeX currently has to create and maintain 
 
 Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with Jabref and similar tools, and backing up the personal database. We do this using Git repositories, but you don't need to know Git in order to use Lingbib as all of this is coordinated using a simple command line helper program.
 
+If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main Lingbib repository over the internet. If you need to modify the repository in any way, or of you with to contribute to Lingbib, you will need to setup a local repository on your computer according to the [installation instructions](#installation) below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+
+All users and contributors should read the remainder of this README, skipping the Installation section in the case that you do not need a local repository.
+
 WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and please contact us if you'd like to get involved.
-
-If you are interested in using the bibliography file, you might wish to read the sections below that detail [our approach to entering data into the databse][phil], [that comment on the unified style sheet for linguistics][ussl], and that detail [how to use the database in your `.tex` files][use].
-
-If you are interested in contributing to the maintenance of the bibliographic database, you should also read the sections that detail [our approach to entering data into the databse][phil] and [that comment on the unified style sheet for linguistics][ussl] as well as the section on [contributing][contrib].
 
 ## Installation
 

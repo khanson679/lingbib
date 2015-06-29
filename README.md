@@ -16,25 +16,14 @@ lingbib currently works on Unix-like systems, including Debian/Ubuntu and Mac OS
 
 To use lingbib, you will need the following:
 * git
-* Python 2.7 or 3.1+ (tested on 2.7 and 3.4, should work on 3.1-3.3, may also work on 2.6 and 3.0)
-* docopt >= 0.60
+* Python 2.7 or 3.1+ (tested on 2.7, should work on 3.1-3.4, may also work on 2.6 and 3.0)
 * Bibtool >= 2.60
 
 See the official instructions for [installing Git][install-git] if you don't have it already.
 
 Python is installed by default on Ubuntu and OSX. Enter `python --version` to check your version. On other systems, you may have to download and install it.
 
-`docopt` is a Python module which is best installed through `pip`. However, `pip` is usually not installed by default, so if you don't already have it then you must install it first.
-* Ubuntu: `sudo apt-get install python-pip`
-* OSX:    `sudo easy_install pip`
-
-Then, install docopt.
-* Ubuntu: `sudo pip install docopt`
-* OSX:    `sudo pip install docopt`
-
-Note that if you installed Python manually, you may need to install invoke `pip` differently.
-
-The author of Bibtool provides only the source code. Please see the [build instructions][build-bibtool]. Binaries are available through Ubuntu, but the version as of 15.04 is older than 2.60, which contains a critical bug fix relevant to lingbib. If you really don't want to install from source, you can use [Homebrew][homebrew] on OSX or [Linuxbrew][linuxbrew] on Ubuntu.
+The author of Bibtool provides only the source code. Please see the [build instructions][build-bibtool]. Binaries are available through Ubuntu, but the version as of Ubuntu 15.04 is still older than 2.60, which contains a critical bug fix relevant to lingbib. If you really don't want to install from source, you can try [Homebrew][homebrew] on OSX (tested) or [Linuxbrew][linuxbrew] on Ubuntu (untested).
 * Ubuntu: `brew install bib-tool`
 * OSX:    `brew install bib-tool`
 

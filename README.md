@@ -1,12 +1,12 @@
 # lingbib
 
-WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and please contact us if you'd like to get involved.
-
 ## Overview
 
-This is a repository for open and collaborative management of a comprehensive linguistics bibliography.
+Everyone linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references. It would be much more efficient we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics. In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
 
-Everyone who is a linguist and a user of (La)TeX eventually goes through the process of creating and maintaining their own `.bib` file for references. In our opinion, this is wasted effort. Instead, we could all contribute to the maintenance of a single, comprehensive bibliography file for linguistics. In addition to saving everyone some time, another advantages of this approach is that there will be, in principle, fewer errors in the database, since more people will be looking things over.
+Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with Jabref and similar tools, and backing up the personal database. We do this using Git repositories, but you don't need to know Git in order to use Lingbib as all of this is coordinated using a simple command line helper program.
+
+WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and please contact us if you'd like to get involved.
 
 If you are interested in using the bibliography file, you might wish to read the sections below that detail [our approach to entering data into the databse][phil], [that comment on the unified style sheet for linguistics][ussl], and that detail [how to use the database in your `.tex` files][use].
 

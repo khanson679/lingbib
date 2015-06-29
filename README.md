@@ -1,5 +1,7 @@
 # lingbib
 
+WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and please contact us if you'd like to get involved.
+
 ## Overview
 
 This is a repository for open and collaborative management of a comprehensive linguistics bibliography.

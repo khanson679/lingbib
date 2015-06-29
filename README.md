@@ -12,14 +12,31 @@ If you are interested in contributing to the maintenance of the bibliographic da
 
 ## Installation
 
-lingbib currently works on Unix-like systems, including Debian/Ubuntu and Mac OSX. You may also be able to get it to work under Cygwin on Windows (currently untested).
+In order to make full use of lingbib, you will need to do the following:
+* Fork the lingbib repository on Github.
+* Clone your forked repository on your local computer, setting the Github repository as the "origin" remote repository.
+* Install the software dependencies for the lingbib helper program.
+* Set the lingbib repository as the "upstream" remote repository.
 
-To use lingbib, you will need the following:
-* git
-* Python 2.7 or 3.1+ (tested on 2.7, should work on 3.1-3.4, may also work on 2.6 and 3.0)
-* Bibtool >= 2.60
+You may be able to do what you need with lingbib using an alternative setup, but we encourage you to use this one regardless since having one common system makes it easier to troubleshoot problems. Additionally, contributors must use this setup in order for their contributions to be accepted.
+
+### Fork the lingbib repository
+
+To fork the lingbib repository, simply click the "fork" button at the top of the [lingbib Github page][lingbib]. You will need to create an account if you don't have one already.
+
+### Clone the forked repository
+
+To download a copy of the forked repository, open a terminal and enter `git clone <repository address> <target directory>`. This will set the Github repository you cloned from as "origin" by default. If you omit the target directory from this command, a directory called "lingbib" will be created and used by default.
 
 See the official instructions for [installing Git][install-git] if you don't have it already.
+
+### Install the software dependencies
+
+The lingbib helper program currently works on Unix-like systems, including Debian/Ubuntu Linux and Mac OSX. You should also be able to get it to work under Cygwin on Windows (currently untested).
+
+To use the lingbib program, you will need the following:
+* Python 2.7 or 3.1+ (tested on 2.7, should work on 3.1-3.4, may also work on 2.6 and 3.0)
+* Bibtool >= 2.60
 
 Python is installed by default on Ubuntu and OSX. Enter `python --version` to check your version. On other systems, you may have to download and install it.
 
@@ -27,7 +44,9 @@ The author of Bibtool provides only the source code. Please see the [build instr
 * Ubuntu: `brew install bib-tool`
 * OSX:    `brew install bib-tool`
 
-Once all the prerequisites are installed, use `git clone https://github.com/lingbib/lingbib` to download a copy of the lingbib repository.
+### Set the "upstream" repository
+
+Once everything else is set up, open a terminal and navigate to your local repository, and enter `lingbib config defaults` to check the Git configuration and fill in any gaps, including the "upstream" repository.
 
 ## Support
 
@@ -71,6 +90,7 @@ If you are not sure how to use `git` and GitHub to add an entry and don't have t
 
 Currently, there are just two of us. As this project grows, we are sure to get more and more pull requests and have more and more issues opened. So, if you are interested in joining the team and helping us handle pull requests and issues, please contact [Adam and Kenneth][email]. We would greatly appreciate the help!
 
+[lingbib]: https://github.com/lingbib/lingbib
 [install-git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [build-bibtool]: https://github.com/ge-ne/bibtool/blob/master/README
 [homebrew]: http://brew.sh/

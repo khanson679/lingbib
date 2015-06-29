@@ -2,15 +2,15 @@
 
 ## Overview
 
-Everyone linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references. It would be much more efficient we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics. In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
+Every linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references. It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics. In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
 
-Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with Jabref and similar tools, and backing up the personal database. We do this using Git repositories, but you don't need to know Git in order to use Lingbib as all of this is coordinated using a simple command line helper program.
+This is what lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with JabRef, BibDesk, and similar tools, and backing up the personal database. We do this using `git` repositories, but you don't need to know `git` in order to use lingbib as all of this is coordinated using a simple command line helper program.
 
-If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main Lingbib repository over the internet. If you need to modify the repository in any way, or of you with to contribute to Lingbib, you will need to setup a local repository on your computer according to the [installation instructions](#installation) below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. If you need to modify the repository in any way, or if you with to contribute to lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
 
 All users and contributors should read the remainder of this README, skipping the Installation section in the case that you do not need a local repository.
 
-WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and please contact us if you'd like to get involved.
+WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and [please contact us if you'd like to get involved][email].
 
 ## Installation
 
@@ -48,13 +48,13 @@ The author of Bibtool provides only the source code. Please see the [build instr
 
 ### Set the "upstream" repository
 
-Once everything else is set up, open a terminal and navigate to your local repository, and enter `lingbib config defaults` to check the Git configuration and fill in any gaps, including the "upstream" repository.
+Once everything else is set up, open a terminal and navigate to your local repository, and enter `lingbib config defaults` to check the `git` configuration and fill in any gaps, including the "upstream" repository.
 
 ## Support
 
 If you have general comments or questions about lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain lingbib. Feel free to also just drop by and say *hi*!
 
-[![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lingbib/lingbib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)][gitter-chat]
 
 You can also report problems and bugs as well as suggest improvements via [GitHub issues][issue].
 
@@ -97,12 +97,14 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [build-bibtool]: https://github.com/ge-ne/bibtool/blob/master/README
 [homebrew]: http://brew.sh/
 [linuxbrew]: https://github.com/Homebrew/linuxbrew
-[phil]: https://github.com/lingbib/lingbib#philosophy
-[ussl]: https://github.com/lingbib/lingbib#comments-on-the-unified-style-sheet-for-linguistics
+[install]: #installation
+[phil]: #philosophy
+[ussl]: #comments-on-the-unified-style-sheet-for-linguistics
 [uss]: http://celxj.org/downloads/UnifiedStyleSheet.pdf
 [CELxJ]: http://celxj.org/
 [use]: https://github.com/lingbib/lingbib#using-the-bib-file
-[contrib]: https://github.com/lingbib/lingbib#contributing
-[pr]: https://github.com/lingbib/lingbib#submit-a-pull-request
+[contrib]: #contributing
+[pr]: #submit-a-pull-request
+[gitter-chat]: https://gitter.im/lingbib/lingbib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [issue]: https://github.com/lingbib/lingbib/issues
 [email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

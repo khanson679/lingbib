@@ -35,3 +35,8 @@ The author of Bibtool provides only the source code. Please see the [build instr
 ## Set the "upstream" repository
 
 Once everything else is set up, open a terminal and navigate to your local repository, and enter `lingbib config defaults` to check the `git` configuration and fill in any gaps, including the "upstream" repository.
+
+[install-git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+[build-bibtool]: https://github.com/ge-ne/bibtool/blob/master/README
+[homebrew]: http://brew.sh/
+[linuxbrew]: https://github.com/Homebrew/linuxbrew

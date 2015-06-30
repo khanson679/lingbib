@@ -1,10 +1,10 @@
-# lingbib
+# Lingbib
 
 ## Overview
 
 Every linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references. It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics. In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
 
-This is what lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with JabRef, BibDesk, and similar tools, and backing up the personal database. We do this using `git` repositories, but you don't need to know `git` in order to use lingbib as all of this is coordinated using a simple command line helper program.
+This is what Lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with JabRef, BibDesk, and similar tools, and backing up the personal database. We do this using `git` repositories, but you don't need to know `git` in order to use Lingbib as all of this is coordinated using a simple command line helper program.
 
 All users and contributors should read the remainder of this README. Additional documentation is available on the [Lingbib wiki][wiki].
 
@@ -16,21 +16,21 @@ This README is currently under construction, and may not accurately describe the
 
 If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. (See: [Using a remote bibliography file][remote-bibfile])
 
-If you need to modify the repository in any way, or if you with to contribute to lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+If you need to modify the repository in any way, or if you with to contribute to Lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
 
 ## Installation
 
-In order to make full use of lingbib, you will need to do the following:
-* Fork the lingbib repository on Github.
+In order to make full use of Lingbib, you will need to do the following:
+* Fork the Lingbib repository on Github.
 * Clone your forked repository on your local computer, setting the Github repository as the "origin" remote repository.
-* Install the software dependencies for the lingbib helper program.
-* Set the lingbib repository as the "upstream" remote repository.
+* Install the software dependencies for the `lingbib` helper program.
+* Set the Lingbib repository as the "upstream" remote repository.
 
-You may be able to do what you need with lingbib using an alternative setup, but we encourage you to use this one regardless since having one common system makes it easier to troubleshoot problems. Additionally, contributors must use this setup in order for their contributions to be accepted.
+You may be able to do what you need with Lingbib using an alternative setup, but we encourage you to use this one regardless since having one common system makes it easier to troubleshoot problems. Additionally, contributors must use this setup in order for their contributions to be accepted.
 
-### Fork the lingbib repository
+### Fork the Lingbib repository
 
-To fork the lingbib repository, simply click the "fork" button at the top of the [lingbib Github page][lingbib]. You will need to create an account if you don't have one already.
+To fork the Lingbib repository, simply click the "fork" button at the top of the [Lingbib Github page][lingbib]. You will need to create an account if you don't have one already.
 
 ### Clone the forked repository
 
@@ -40,15 +40,15 @@ See the official instructions for [installing Git][install-git] if you don't hav
 
 ### Install the software dependencies
 
-The lingbib helper program currently works on Unix-like systems, including Debian/Ubuntu Linux and Mac OSX. You should also be able to get it to work under Cygwin on Windows (currently untested).
+The `lingbib` helper program currently works on Unix-like systems, including Debian/Ubuntu Linux and Mac OSX. You should also be able to get it to work under Cygwin on Windows (currently untested).
 
-To use the lingbib program, you will need the following:
+To use the `lingbib` program, you will need the following:
 * Python 2.7 or 3.1+ (tested on 2.7, should work on 3.1-3.4, may also work on 2.6 and 3.0)
 * Bibtool >= 2.60
 
 Python is installed by default on Ubuntu and OSX. Enter `python --version` to check your version. On other systems, you may have to download and install it.
 
-The author of Bibtool provides only the source code. Please see the [build instructions][build-bibtool]. Binaries are available through Ubuntu, but the version as of Ubuntu 15.04 is still older than 2.60, which contains a critical bug fix relevant to lingbib. If you really don't want to install from source, you can try [Homebrew][homebrew] on OSX (tested) or [Linuxbrew][linuxbrew] on Ubuntu (untested).
+The author of Bibtool provides only the source code. Please see the [build instructions][build-bibtool]. Binaries are available through Ubuntu, but the version as of Ubuntu 15.04 is still older than 2.60, which contains a critical bug fix relevant to Lingbib. If you really don't want to install from source, you can try [Homebrew][homebrew] on OSX (tested) or [Linuxbrew][linuxbrew] on Ubuntu (untested).
 * Ubuntu: `brew install bib-tool`
 * OSX:    `brew install bib-tool`
 
@@ -58,7 +58,7 @@ Once everything else is set up, open a terminal and navigate to your local repos
 
 ## Support
 
-If you have general comments or questions about lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain lingbib. Feel free to also just drop by and say *hi*!
+If you have general comments or questions about Lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain Lingbib. Feel free to also just drop by and say *hi*!
 
 [![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)][gitter-chat]
 

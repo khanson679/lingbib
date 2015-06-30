@@ -6,11 +6,17 @@ Every linguist who is a user of (La)TeX currently has to create and maintain the
 
 This is what lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with JabRef, BibDesk, and similar tools, and backing up the personal database. We do this using `git` repositories, but you don't need to know `git` in order to use lingbib as all of this is coordinated using a simple command line helper program.
 
-If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. If you need to modify the repository in any way, or if you with to contribute to lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+All users and contributors should read the remainder of this README. Additional documentation is available on the [Lingbib wiki][wiki].
 
-All users and contributors should read the remainder of this README, skipping the Installation section in the case that you do not need a local repository.
+## Warning
 
-WARNING: This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and [please contact us if you'd like to get involved][email].
+This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and [please contact us if you'd like to get involved][email].
+
+## Getting started
+
+If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. (See: [Using a remote bibliography file][remote-bibfile])
+
+If you need to modify the repository in any way, or if you with to contribute to lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
 
 ## Installation
 
@@ -93,6 +99,8 @@ If you are not sure how to use `git` and GitHub to add an entry and don't have t
 Currently, there are just two of us. As this project grows, we are sure to get more and more pull requests and have more and more issues opened. So, if you are interested in joining the team and helping us handle pull requests and issues, please contact [Adam and Kenneth][email]. We would greatly appreciate the help!
 
 [lingbib]: https://github.com/lingbib/lingbib
+[wiki]: https://github.com/lingbib/lingbib/wiki
+[remote-bibfile]: https://github.com/lingbib/lingbib/wiki/Using-a-remote-bibliography-file
 [install-git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [build-bibtool]: https://github.com/ge-ne/bibtool/blob/master/README
 [homebrew]: http://brew.sh/

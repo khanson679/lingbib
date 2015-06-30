@@ -4,19 +4,41 @@
 
 Every linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references. It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics. In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
 
-This is what Lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for contributing to the database, syncing it with a personal database for use with JabRef, BibDesk, and similar tools, and backing up the personal database. We do this using `git` repositories, but you don't need to know `git` in order to use Lingbib as all of this is coordinated using a simple command line helper program.
+This is what Lingbib is. Lingbib includes such a database, provided in BibLaTeX format (and in the future, the old BibTeX format), along with a system for...
+* maintaining a copy of the master database on your local computer,
+* syncing the master database with a personal database for use with JabRef, BibDesk, and similar tools,
+* backing up your personal database remotely,
+* contributing to the master database
+
+We do this using the Git versional control system, but you don't need to know Git in order to use Lingbib as everything is coordinated using a simple command line helper program.
 
 All users and contributors should read the remainder of this README. Additional documentation is available on the [Lingbib wiki][wiki].
 
 ## Warning
 
-This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means try out what we have (you may need to look in the development branches), and [please contact us if you'd like to get involved][email].
+This README is currently under construction, and may not accurately describe the current state of the project. Lingbib itself is also not ready for use quite yet, but if you're interested in contributing to the project then by all means read through the documentation, try it out (you may want to look in the development branches), and let us know if you'd like to [get involved](#contributing).
 
 ## Getting started
 
 If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. See [Using a remote bibliography file][remote-bibfile] for instructions.
 
-If you need to modify the repository in any way, or if you with to contribute to Lingbib, you will need to setup a local repository on your computer. See the [installation instructions][install] for details. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+If you want to use any further features of Lingbib, or if you wish to contribute to the project, you will need to setup a local repository on your computer. See the [installation instructions][install] for details. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
+
+## General project notes
+
+### Philosophy
+
+In an attempt to make the database that we maintain usable for whatever purpose, we think it makes most sense to make the bibliographic entries as comprehensive as possible. All sylistic decisions should therefore be implemented at the level of the bibliography style files.
+
+For example, if a style suggests that, for whatever reason, the editors of the work should not be included in the citation, this should be controlled by the `.bst` file (if one uses `natbib` and BibTeX) or the `.bbx` file (if one uses BibLaTeX and Biber). Regardless of the dictations of the particular style, the editors (if known) should be included in the `.bib` file. This allows the *same* `.bib` file to be used with a different style that might wish to have the editors included in the citation.
+
+By including all known information in the database, the `.bib` file will hopefully be as useful and as portable as possible for whatever purpose one might need it for.
+
+### Comments on the unified style sheet for linguistics
+
+The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Committee of Editors of Linguistics Journals][CELxJ].
+
+**DETAILS TO COME**
 
 ## Support
 
@@ -25,20 +47,6 @@ If you have general comments or questions about Lingbib, we have a Gitter chatro
 [![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)][gitter-chat]
 
 You can also report problems and bugs as well as suggest improvements via [GitHub issues][issue].
-
-## Philosophy
-
-In an attempt to make the database that we maintain usable for whatever purpose, we think it makes most sense to make the bibliographic entries as comprehensive as possible. All sylistic decisions should therefore be implemented at the level of the bibliography style files.
-
-For example, if a style suggests that, for whatever reason, the editors of the work should not be included in the citation, this should be controlled by the `.bst` file (if one uses `natbib` and BibTeX) or the `.bbx` file (if one uses BibLaTeX and Biber). Regardless of the dictations of the particular style, the editors (if known) should be included in the `.bib` file. This allows the *same* `.bib` file to be used with a different style that might wish to have the editors included in the citation.
-
-By including all known information in the database, the `.bib` file will hopefully be as useful and as portable as possible for whatever purpose one might need it for.
-
-## Comments on the unified style sheet for linguistics
-
-The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Committee of Editors of Linguistics Journals][CELxJ].
-
-**DETAILS TO COME**
 
 ## Contributing
 

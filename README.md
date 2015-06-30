@@ -14,47 +14,9 @@ This README is currently under construction, and may not accurately describe the
 
 ## Getting started
 
-If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. (See: [Using a remote bibliography file][remote-bibfile])
+If all you want to do is use entries from the database as is, you can simply tell BibLaTeX to access the main `.bib` file over the internet. See [Using a remote bibliography file][remote-bibfile] for instructions.
 
-If you need to modify the repository in any way, or if you with to contribute to Lingbib, you will need to setup a local repository on your computer according to the [installation instructions][install] below. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
-
-## Installation
-
-In order to make full use of Lingbib, you will need to do the following:
-* Fork the Lingbib repository on Github.
-* Clone your forked repository on your local computer, setting the Github repository as the "origin" remote repository.
-* Install the software dependencies for the `lingbib` helper program.
-* Set the Lingbib repository as the "upstream" remote repository.
-
-You may be able to do what you need with Lingbib using an alternative setup, but we encourage you to use this one regardless since having one common system makes it easier to troubleshoot problems. Additionally, contributors must use this setup in order for their contributions to be accepted.
-
-### Fork the Lingbib repository
-
-To fork the Lingbib repository, simply click the "fork" button at the top of the [Lingbib Github page][lingbib]. You will need to create an account if you don't have one already.
-
-### Clone the forked repository
-
-To download a copy of the forked repository, open a terminal and enter `git clone <repository address> <target directory>`. This will set the Github repository you cloned from as "origin" by default. If you omit the target directory from this command, a directory called "lingbib" will be created and used by default.
-
-See the official instructions for [installing Git][install-git] if you don't have it already.
-
-### Install the software dependencies
-
-The `lingbib` helper program currently works on Unix-like systems, including Debian/Ubuntu Linux and Mac OSX. You should also be able to get it to work under Cygwin on Windows (currently untested).
-
-To use the `lingbib` program, you will need the following:
-* Python 2.7 or 3.1+ (tested on 2.7, should work on 3.1-3.4, may also work on 2.6 and 3.0)
-* Bibtool >= 2.60
-
-Python is installed by default on Ubuntu and OSX. Enter `python --version` to check your version. On other systems, you may have to download and install it.
-
-The author of Bibtool provides only the source code. Please see the [build instructions][build-bibtool]. Binaries are available through Ubuntu, but the version as of Ubuntu 15.04 is still older than 2.60, which contains a critical bug fix relevant to Lingbib. If you really don't want to install from source, you can try [Homebrew][homebrew] on OSX (tested) or [Linuxbrew][linuxbrew] on Ubuntu (untested).
-* Ubuntu: `brew install bib-tool`
-* OSX:    `brew install bib-tool`
-
-### Set the "upstream" repository
-
-Once everything else is set up, open a terminal and navigate to your local repository, and enter `lingbib config defaults` to check the `git` configuration and fill in any gaps, including the "upstream" repository.
+If you need to modify the repository in any way, or if you with to contribute to Lingbib, you will need to setup a local repository on your computer. See the [installation instructions][install] for details. In the future we may create a web interface for new entry submissions, at the very least, but at the moment this is the only option.
 
 ## Support
 
@@ -78,10 +40,6 @@ The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Comm
 
 **DETAILS TO COME**
 
-## Using the `.bib` file
-
-**DETAILS TO COME**
-
 ## Contributing
 
 There are three ways that you can help contribute to this project, discussed in order of least work to most work.
@@ -101,11 +59,7 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [lingbib]: https://github.com/lingbib/lingbib
 [wiki]: https://github.com/lingbib/lingbib/wiki
 [remote-bibfile]: https://github.com/lingbib/lingbib/wiki/Using-a-remote-bibliography-file
-[install-git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-[build-bibtool]: https://github.com/ge-ne/bibtool/blob/master/README
-[homebrew]: http://brew.sh/
-[linuxbrew]: https://github.com/Homebrew/linuxbrew
-[install]: #installation
+[install]: installation.md
 [phil]: #philosophy
 [ussl]: #comments-on-the-unified-style-sheet-for-linguistics
 [uss]: http://celxj.org/downloads/UnifiedStyleSheet.pdf

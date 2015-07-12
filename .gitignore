@@ -123,8 +123,18 @@ sympy-plots-for-*.tex/
 ### xindy
 *.xdy
 
+#####################################
+# Other files to ignore
+#####################################
+
 ### Sublime Text per-user files
 *.sublime-workspace
 
 ### Compiled Python modules
 *.pyc
+
+### Backup files from Jabref
+*.bak
+
+### Backup files from lingbib app
+*.old

@@ -1,8 +1,10 @@
-# Make sure that we can pull from the upstream remote
+# Make sure that we can fetch from the upstream remote
 if ! git remote | grep upstream > /dev/null; then
     git remote add upstream https://github.com/lingbib/lingbib.git
-
 fi
+# Fetch the latest updates from the upstream remote
+git fetch upstream
+
 # Check for unstaged changes
 if ! git diff-files --quiet; then
     echo "You have unstaged changes in the current working directory."
@@ -26,12 +28,12 @@ fi
 if [ $err = 1 ]; then
     exit 1
 fi
-# Checkout a branch called NewEntries
-if git branch | grep NewEntries > /dev/null; then
+# Checkout a branch called dbedit
+if git branch | grep dbedit > /dev/null; then
     # If it already exists, we want to get some user input
-    echo "The branch NewEntries already exists."
+    echo "The branch dbedit already exists."
     echo "If you have a pull request that is still open, you can \
-    just check out the NewEntries branch and add to it."
+    just check out the dbedit branch and add to it."
     echo "If your last pull request is closed, then the branch should \
     be deleted and recreated."
     echo "Please hit '1' and 'ENTER' if your last pull request is still \
@@ -44,20 +46,16 @@ if git branch | grep NewEntries > /dev/null; then
             # However, we might want to make this more robust
             # and check for merge conflicts and exit gracefully
             # if there are any merge conflicts
-            Open ) git checkout NewEntries; git pull --rebase upstream master; break;;
-            Closed ) git checkout master; git pull --rebase upstream master; git branch -D NewEntries; git push origin --delete NewEntries; git checkout -b NewEntries; break;;
+            Open ) git checkout dbedit; git rebase upstream/master; break;;
+            Closed ) git branch -D dbedit; git push origin --delete dbedit; git checkout -b dbedit upstream/master; break;;
         esac
     done 
 else
     # If it doesn't already exist, we can just check it out
-    # First, make sure we are on master branch
-    git checkout master
-    # Get any new updates from main repository
-    git pull --rebase upstream master
-    # Make the new branch
-    git checkout -b NewEntries
+    # from the updated upstream/master ref
+    git checkout -b dbedit upstream/master
 fi
-echo "You are now on a new branch called NewEntries."
+echo "You are now on a new branch called dbedit."
 echo "You can add entries on this new branch."
 echo "When you are done adding entries, stage and commit them with \
 'lingbib add' and 'lingbib commit'."
@@ -66,7 +64,7 @@ echo "When you are done adding entries, stage and commit them with \
 # 'lingbib commit' will need to just be a wrapper for 'git commit'
 echo "Then, push your changes to GitHub with 'lingbib pushnew'."
 # 'lingbib pushnew' will just need to be a wrapper for
-# 'git push origin NewEntries'
+# 'git push origin dbedit'
 echo "After that, you can go to your fork of the lingbib repository \
 on github.com
  and create a pull request."

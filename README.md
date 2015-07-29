@@ -67,7 +67,7 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [lingbib]: https://github.com/lingbib/lingbib
 [wiki]: https://github.com/lingbib/lingbib/wiki
 [remote-bibfile]: https://github.com/lingbib/lingbib/wiki/Using-a-remote-bibliography-file
-[install]: https://github.com/lingbib/lingbib/wiki/Complete-setup-instructions
+[install]: https://github.com/lingbib/lingbib/wiki/Setup-instructions
 [phil]: #philosophy
 [ussl]: #comments-on-the-unified-style-sheet-for-linguistics
 [uss]: http://celxj.org/downloads/UnifiedStyleSheet.pdf

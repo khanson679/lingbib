@@ -44,7 +44,7 @@ The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Comm
 
 If you have general comments or questions about Lingbib, we have a Gitter chatroom where you can join our discussion about how to build and maintain Lingbib. Feel free to also just drop by and say *hi*!
 
-[![Join the chat at https://gitter.im/lingbib/lingbib](https://badges.gitter.im/Join%20Chat.svg)][gitter-chat]
+[![Join the chat at https://gitter.im/lingbib/lingbib][gitter-badge]][gitter-chat]
 
 You can also report problems and bugs as well as suggest improvements via [GitHub issues][issue].
 
@@ -76,5 +76,6 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [contrib]: #contributing
 [pr]: #submit-a-pull-request
 [gitter-chat]: https://gitter.im/lingbib/lingbib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [issue]: https://github.com/lingbib/lingbib/issues
 [email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

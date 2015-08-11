@@ -75,7 +75,7 @@ Currently, there are just two of us. As this project grows, we are sure to get m
 [use]: https://github.com/lingbib/lingbib#using-the-bib-file
 [contrib]: #contributing
 [pr]: #submit-a-pull-request
-[gitter-chat]: https://gitter.im/lingbib/lingbib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[gitter-chat]: https://gitter.im/lingbib/support?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [issue]: https://github.com/lingbib/lingbib/issues
 [email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

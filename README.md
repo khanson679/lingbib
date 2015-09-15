@@ -13,7 +13,7 @@ This is what Lingbib is. Lingbib includes such a database, provided in BibLaTeX 
 We do this using the Git versional control system, but you don't need to know Git in order to use Lingbib as everything is coordinated using a simple command line helper program.
 
 
-## Documenation
+## Documentation
 
 Further documentation, including setup instructions, is available on the [Lingbib wiki][wiki].
 

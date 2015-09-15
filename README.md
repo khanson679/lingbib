@@ -2,7 +2,7 @@
 
 ## Overview
 
-Every linguist who is a user of (La)TeX currently has to create and maintain their own `.bib` file for references.
+Every linguist who is a user of LaTeX currently has to create and maintain their own `.bib` file for references.
 It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics.
 In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.
 
@@ -23,7 +23,7 @@ Further documentation, including setup instructions, is available on the [Lingbi
 ## Contributing
 
 This project is currently in the alpha stage.
-We are in particular need of contributions the bibliography so that it becomes large enough to be useful to general users.
+We are in particular need of contributions to the bibliography so that it becomes large enough to be useful to general users.
 We are also looking for maintainers to help handle submissions and test the system.
 See the [wiki][wiki] for details.
 

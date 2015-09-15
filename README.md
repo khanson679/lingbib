@@ -2,6 +2,12 @@
 
 ## Overview
 
+Lingbib is a comprehensive, collaborative linguistics bibliography for (La)TeX documents, compatible with the [Biblatex Unified Stylesheet for Linguistic Journals][uss-biblatex] and managed with the [Git][git] version control system.
+
+
+[git]: http://git-scm.com/
+[uss-biblatex]: https://github.com/semprag/biblatex-sp-unified
+[using-bib-file]: #1-using-the-bibliography-file
 Every linguist who is a user of LaTeX currently has to create and maintain their own `.bib` file for references.
 It would be much more efficient if we could all contribute to and use a single, comprehensive bibliographic database for the field of linguistics.
 In addition to saving time for everyone, a collaborative approach would also help maximize the accuracy of the data.

@@ -30,19 +30,19 @@ We are in particular need of contributors in order to build Lingbib to a size la
 There are three ways to get started using the Lingbib bibliography file in your documents, listed below in order of ease of setup.
 
 1. Access the file remotely with Biblatex (no installation required)
-2. Download the Github repository and link the files into your TEXMFHOME folder ([Git][git] and installation required)
-3. Make a personal fork of the Github repository, then download and link (Git, [Github][github] account, and installation required)
+2. Download the GitHub repository and link the files into your TEXMFHOME folder ([Git][git] and installation required)
+3. Make a personal fork of the GitHub repository, then download and link (Git, [GitHub][github] account, and installation required)
 
 We highly recommend the third option. The table below compares the features available with all three.
 
 | Feature | (1) Remote access | (2) Download Git repo | (3) Fork repo and download |
 | ------- | ----------------- | --------------------- | -------------------------- |
-| Usable offline                                          | --- | Yes | Yes |
-| Can use Biblatex/Biber                                  | Yes | Yes | Yes |
-| Can use Biblatex/Natbib                                 | --- | Yes | Yes |
+| Usable offline                                                 | --- | Yes | Yes |
+| Can use Biblatex/Biber                                         | Yes | Yes | Yes |
+| Can use Biblatex/Natbib                                        | --- | Yes | Yes |
 | Can sync with personal bibliography for use with Jabref, etc.  | --- | --- | Yes |
-| Can backup local additions to Github fork               | --- | --- | Yes |
-| Can make contributions via Github pull requests         | --- | --- | Yes |
+| Can backup local additions to GitHub fork                      | --- | --- | Yes |
+| Can make contributions via GitHub pull requests                | --- | --- | Yes |
 
 Further details can be found on the wiki at [Getting Started][getting-started].
 
@@ -52,7 +52,7 @@ Further details can be found on the wiki at [Getting Started][getting-started].
 The main way you can contribute to Lingbib is by submitting a new entry to the bibliography file.
 
 There are two methods you can do this.
-The first and simplest is to contribute is to submit a missing entry using the Github web interface.
+The first and simplest is to contribute is to submit a missing entry using the GitHub web interface.
 
 The second method to contribute is to submit a pull request that contains a missing entry.
 Thhis method requires using the command line, but contributions of this type are greatly appreciated, as it reduces the work that the maintainers have to do! :stuck_out_tongue:

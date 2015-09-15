@@ -26,14 +26,6 @@ If you want to use any further features of Lingbib, or if you wish to contribute
 
 ## General project notes
 
-### Philosophy
-
-In an attempt to make the database that we maintain usable for whatever purpose, we think it makes most sense to make the bibliographic entries as comprehensive as possible. All sylistic decisions should therefore be implemented at the level of the bibliography style files.
-
-For example, if a style suggests that, for whatever reason, the editors of the work should not be included in the citation, this should be controlled by the `.bst` file (if one uses `natbib` and BibTeX) or the `.bbx` file (if one uses BibLaTeX and Biber). Regardless of the dictations of the particular style, the editors (if known) should be included in the `.bib` file. This allows the *same* `.bib` file to be used with a different style that might wish to have the editors included in the citation.
-
-By including all known information in the database, the `.bib` file will hopefully be as useful and as portable as possible for whatever purpose one might need it for.
-
 ### Comments on the unified style sheet for linguistics
 
 The [unified style sheet for linguistics][uss] was developed by [CELxJ, the Committee of Editors of Linguistics Journals][CELxJ].

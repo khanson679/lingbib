@@ -53,7 +53,7 @@ We are currently looking for addition maintainers, and we expect this need to gr
 If you are interested getting more closely involved, you should get in touch with the Lingbib co-creators [Adam and Kenneth][email].
 We would greatly appreciate your help! :smile:
 
-Helping to maintain Lingbib will mostly involve handling pull requests and issues. Please see [For maintainers] on the wiki for further information.
+Helping to maintain Lingbib will mostly involve handling pull requests and issues. Please see [For maintainers][for-maintainers] on the wiki for further information.
 
 
 ## Documentation
@@ -83,3 +83,4 @@ You can also report problems and bugs as well as suggest improvements via [GitHu
 [issues]: https://github.com/lingbib/lingbib/issues
 [uss-biblatex]: https://github.com/semprag/biblatex-sp-unified
 [wiki]: https://github.com/lingbib/lingbib/wiki
+[email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

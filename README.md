@@ -27,24 +27,9 @@ We are in particular need of contributors in order to build Lingbib to a size la
 
 ## Using Lingbib
 
-There are three ways to get started using the Lingbib bibliography file in your documents, listed below in order of ease of setup.
+Lingbib can be used in documents without additional setup with Biblatex and Biber's ability to read remote bibliography files. To make use of any addition features, you will need to download and configure Lingbib.
 
-1. Access the file remotely with Biblatex (no installation required)
-2. Download the GitHub repository and link the files into your TEXMFHOME folder ([Git][git] and installation required)
-3. Make a personal fork of the GitHub repository, then download and link (Git, [GitHub][github] account, and installation required)
-
-We highly recommend the third option. The table below compares the features available with all three.
-
-| Feature | (1) Remote access | (2) Download Git repo | (3) Fork repo and download |
-| ------- | ----------------- | --------------------- | -------------------------- |
-| Usable offline                                                 | --- | Yes | Yes |
-| Can use Biblatex/Biber                                         | Yes | Yes | Yes |
-| Can use Biblatex/Natbib                                        | --- | Yes | Yes |
-| Can sync with personal bibliography for use with Jabref, etc.  | --- | --- | Yes |
-| Can backup local additions to GitHub fork                      | --- | --- | Yes |
-| Can make contributions via GitHub pull requests                | --- | --- | Yes |
-
-Further details can be found on the wiki at [Getting Started][getting-started].
+Instructions for setup and use can be found on the wiki at [Getting Started][getting-started].
 
 
 ## How to Contribute

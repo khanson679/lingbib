@@ -77,7 +77,6 @@ You can also report problems and bugs as well as suggest improvements via [GitHu
 [for-maintainers]: https://github.com/lingbib/lingbib/wiki/For-maintainers
 [getting-started]: https://github.com/lingbib/lingbib/wiki/Getting-started
 [git]: http://git-scm.com/
-[github]: https://github.com
 [gitter-chat]: https://gitter.im/lingbib/support?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [issues]: https://github.com/lingbib/lingbib/issues

@@ -22,7 +22,7 @@ We do this using the [Git][git] version control system, but you don't need to kn
 
 This project is currently in the alpha stage.
 The bibliography file is small, and the [helper program][app] is not yet complete.
-We are in particular need of contributors in order to build Lingbib to a size large enough to be useful to general users, and could also use help from technically-inclined invididuals in testing the program.
+We are in particular need of contributors in order to build Lingbib to a size large enough to be useful to general users, and could also use help from technically-inclined invididuals in testing the program and submission system.
 
 
 ## Using Lingbib

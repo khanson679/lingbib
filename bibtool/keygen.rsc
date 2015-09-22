@@ -10,7 +10,12 @@ resource = {format.rsc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%
-%%% New data field for overrides by the user
+%%% Follow crossrefs for the purposes of key generation
+%%%
+select.crossrefs = on
+
+%%%
+%%% New data fields for overrides by the user
 %%%
 new.field.type = {keyoverride}
 new.field.type = {titlekeyword}

@@ -12,4 +12,3 @@ predication
 projection
 Spanish
 syntax
-Syntax

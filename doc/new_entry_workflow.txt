@@ -1,0 +1,4 @@
+bibtool -r bibtool/keygen.rsc new.bib -o new.bib
+bibtool -r bibtool/sanitize new.bib lingbib-master.bib -o lingbib-master.bib
+rm new.bib
+git add lingbib-master.bib

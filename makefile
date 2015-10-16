@@ -1,4 +1,5 @@
-# Makefile for Lingbib maintenance
+#
+# Makefile for Lingbib database generation
 #
 # To use, run `make` from the directory containing the makefile.
 #
@@ -6,14 +7,14 @@
 # To clean up all generated files, add "clean" after the command.
 #
 
-DB_SOURCE=database_src/*
-DB_OUT=lingbib-master.bib
+DB_SRC = database_src/*
+DB_OUT = lingbib-master.bib
 
 all: $(DB_OUT)
 
-$(DB_OUT): $(DB_SOURCE)
+$(DB_OUT): $(DB_SRC)
 	# concatenate files with blank lines in between
-	for i in $(DB_SOURCE); do cat $$i; echo; done > $(DB_OUT)
+	for file in $(DB_SRC); do cat $$file; echo; done > $(DB_OUT)
 
 .PHONY: clean
 clean:

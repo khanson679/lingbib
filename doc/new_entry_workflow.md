@@ -2,7 +2,7 @@
 
 1. Make sure the repo is up to date.
 
-    `git pull lingbib master`
+    ```git pull lingbib master```
 
 2. Create a new branch (e.g. `dbedit`) based on `master` and make all changes there.
 
@@ -17,7 +17,7 @@
 
 5. Check Bibtool output. If there are any problems, fix them and repeat step (4).
 
-6. Merge new entries to the appropriate database file.
+6. Merge new entries to the appropriate database file (in `database_src`).
     
     `bibtool -r bibtool/biblatex.rsc -r bibtool/format.rsc new.bib DB_FILE -o DB_FILE`
 
@@ -25,7 +25,7 @@
 
     `git diff`
 
-    If there are any problems, restore the old database file (in `database_src`) and try again.
+    If there are any problems, restore the old database file and try again.
 
     `git checkout -- DB_FILE`
 

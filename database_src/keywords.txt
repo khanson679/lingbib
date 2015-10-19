@@ -1,4 +1,4 @@
-bare nominals
+bare noun phrase
 Brazilian Portuguese
 French
 labeling
@@ -6,8 +6,10 @@ linguistics
 Merge
 minimal computation
 minimal search
-morphosyntax of number
-noun phrase syntax
+Minimalism
+morphosyntax
+noun phrase
+number
 predication
 projection
 Spanish

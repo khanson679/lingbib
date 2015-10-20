@@ -38,12 +38,30 @@ if not BIB_FILENAMES:
     sys.exit(1)
 
 
+
 #
-# check for undocumented keywords
+# validation functions
 #
 
-master_kw_list = set(line.strip() for line in open(KEYWORD_FILE))
-undocumented_kws = []
+MASTER_KW_LIST = set(line.strip() for line in open(KEYWORD_FILE))
+UNDOCUMENTED_KWS = []
+
+def check_keywords(entry):
+    try:
+        keywords = set(kw.strip() 
+                       for kw in entry['keywords'].split(','))
+    except KeyError:
+        return
+
+    for kw in keywords:
+        print(kw)
+        if kw not in MASTER_KW_LIST:
+            UNDOCUMENTED_KWS.append((kw, entry['ID'], filename))
+
+
+#
+# run tests on each entry in given files
+#
 
 for filename in BIB_FILENAMES:
     with open(filename, 'r') as bibfile:
@@ -53,20 +71,16 @@ for filename in BIB_FILENAMES:
         db = btp.load(bibfile, parser)
 
         for entry in db.entries:
-            try:
-                keywords = set(kw.strip() 
-                               for kw in entry['keywords'].split(','))
-            except KeyError:
-                continue
+            check_keywords(entry)
 
-            for kw in keywords:
-                if kw not in master_kw_list:
-                    undocumented_kws.append((
-                      kw, entry['ID'], filename))
 
-if undocumented_kws:
+#
+# report results
+#
+
+if UNDOCUMENTED_KWS:
     print("Found undocumented keywords:")
-    for entry in undocumented_kws:
+    for entry in UNDOCUMENTED_KWS:
         print("'{}' in '{}' in '{}'".format(*entry))
 
     print("Please change these keywords to match similar ones in the master list,")

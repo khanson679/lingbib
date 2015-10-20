@@ -1,0 +1,6 @@
+article
+book
+collection
+mvcollection
+incollection
+xdata

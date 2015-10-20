@@ -52,9 +52,3 @@ delete.field = {owner}
 delete.field = {timestamp}
 delete.field = {file}
 delete.field = {__markedentry}
-
-%%%
-%%% Delete fields supplied for user to override key generation
-%%%
-delete.field = {asdf}
-delete.field = {xkcd}

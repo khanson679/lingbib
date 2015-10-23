@@ -7,15 +7,21 @@
 # To clean up all generated files, add "clean" after the command.
 #
 
-DB_SRC = database_src/*
-DB_OUT = lingbib-master.bib
+SRC_DIR = database_src
+SRC_STRINGS = ${SRC_DIR}/strings_*.bib
+SRC_METADATA = ${SRC_DIR}/metadata_*.bib
+SRC_ENTRIES = ${SRC_DIR}/entries.bib
+SRC_ALL = ${SRC_STRINGS} ${SRC_METADATA} ${SRC_ENTRIES}
 
-all: $(DB_OUT)
+OUT = lingbib-master.bib
 
-$(DB_OUT): $(DB_SRC)
+
+all: $(OUT)
+
+$(OUT): $(SRC_ALL)
 	# concatenate files with blank lines in between
-	for file in $(DB_SRC); do cat $$file; echo; done > $(DB_OUT)
+	for file in $(SRC_ALL); do cat $$file; echo; done > $(OUT)
 
 .PHONY: clean
 clean:
-	rm -rf $(DB_OUT)
+	rm -rf $(OUT)

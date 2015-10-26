@@ -19,9 +19,9 @@ print.use.tab = off
 %%% 'eventtitleaddon' is 15 characters, and we have a 4 space indent
 %%% so let's do 15 + 4 = 19, plus another 3 to have some offset
 %%%
-print.align = 22
-print.align.string = 22
-print.align.key = 22
+print.align = 32
+print.align.string = 32
+print.align.key = 32
 
 %%%
 %%% Translate double quotes as delimiters "" by braces {}

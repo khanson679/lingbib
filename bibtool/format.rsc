@@ -8,9 +8,9 @@
 print.line.length = 100000
 
 %%%
-%%% Use 4 spaces and no tab
+%%% Use 2 spaces and no tab
 %%%
-print.indent = 4
+print.indent = 2
 print.use.tab = off
 
 %%%

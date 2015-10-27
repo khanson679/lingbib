@@ -8,16 +8,18 @@ eprinttype
 ids
 indexsorttitle
 indextitle
+institution
 issn
 issue
 issuesubtitle
 issuetitle
 journalsubtitle
 journaltitle
-keywords
 keyoverride
+keywords
 langid
 langid
+location
 mainsubtitle
 maintitle
 number
@@ -28,5 +30,6 @@ sortname
 subtitle
 title
 titlekeyword
+type
 volume
 xdata

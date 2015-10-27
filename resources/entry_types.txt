@@ -1,6 +1,3 @@
 article
-book
-collection
-mvcollection
-incollection
+thesis
 xdata

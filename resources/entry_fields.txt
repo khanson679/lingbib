@@ -18,7 +18,6 @@ journaltitle
 keyoverride
 keywords
 langid
-langid
 location
 mainsubtitle
 maintitle

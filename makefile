@@ -20,7 +20,7 @@ all: $(OUT)
 
 $(OUT): $(SRC_ALL)
 	# concatenate files with blank lines in between
-	for file in $(SRC_ALL); do cat $$file; echo; done > $(OUT)
+	scripts/cat_with_headers.sh $(SRC_ALL) > $(OUT)
 
 .PHONY: clean
 clean:

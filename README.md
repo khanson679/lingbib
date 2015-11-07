@@ -1,6 +1,6 @@
 # Lingbib
 
-Lingbib is a comprehensive, collaborative linguistics bibliography for (La)TeX documents.
+Lingbib is a comprehensive, collaborative linguistics bibliography for LaTeX documents.
 It is intended to be used with the [S&P Biblatex implementation][uss-biblatex] of the [Unified Stylesheet for Linguistics][uss], but can also be used with other Biblatex styles.
 
 

@@ -1,5 +1,9 @@
+Across-the-Board movement
 bare noun phrase
 Brazilian Portuguese
+conjunction
+Coordinate Structure Constraint
+coordinate structures
 French
 labeling
 linguistics
@@ -10,7 +14,9 @@ Minimalism
 morphosyntax
 noun phrase
 number
+parasitic gaps
 predication
 projection
+semantics
 Spanish
 syntax

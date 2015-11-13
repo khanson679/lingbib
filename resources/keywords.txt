@@ -4,7 +4,10 @@ Brazilian Portuguese
 conjunction
 Coordinate Structure Constraint
 coordinate structures
+determiner phrase
+DP hypothesis
 French
+gerunds
 labeling
 linguistics
 Merge

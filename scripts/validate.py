@@ -73,69 +73,71 @@ def check_keywords(entry, filename):
             UNDOCUMENTED_KEYWORDS.append((kw, entry['ID'], filename))
 
 
-#
-# parse files and run tests on each entry
-#
+"""
+Parse files and run tests on each entry.
+"""
+def main():
+    # get filenames
+    BIB_FILENAMES = sys.argv[1:]
+    if not BIB_FILENAMES:
+        print("Need at least one `.bib` file to check.")
+        sys.exit(1)
 
-# get filenames
-BIB_FILENAMES = sys.argv[1:]
-if not BIB_FILENAMES:
-    print("Need at least one `.bib` file to check.")
-    sys.exit(1)
+    # read files
+    for filename in BIB_FILENAMES:
+        with open(filename, 'r') as bibfile:
+            # parse file
+            parser = btp.bparser.BibTexParser()
+            parser.ignore_nonstandard_types = False
+            parser.homogenise_fields = False
+            db = btp.load(bibfile, parser)
 
-for filename in BIB_FILENAMES:
-    with open(filename, 'r') as bibfile:
-        # parse file
-        parser = btp.bparser.BibTexParser()
-        parser.ignore_nonstandard_types = False
-        parser.homogenise_fields = False
-        db = btp.load(bibfile, parser)
-
-        # run tests
-        for entry in db.entries:
-            check_entry_type(entry, filename)
-            check_fields(entry, filename)
-            check_keywords(entry, filename)
-
-
-#
-# report results
-#
-
-if UNDOCUMENTED_ETYPES:
-    print("Found undocumented entry types:")
-    for entry in UNDOCUMENTED_ETYPES:
-        print("'{}'\tin [{}] in [{}]".format(*entry))
-
-    print()
-    print("Please correct any spelling errors.")
-    print("If you want to use a type not currently in use, "
-          "please open an issue on GitHub.")
-    print("(https://github.com/lingbib/lingbib/issues)")
-    print()
+            # run tests
+            for entry in db.entries:
+                check_entry_type(entry, filename)
+                check_fields(entry, filename)
+                check_keywords(entry, filename)
 
 
-if UNDOCUMENTED_FIELDS:
-    print("Found undocumented fields:")
-    for entry in UNDOCUMENTED_FIELDS:
-        print("'{}'\tin [{}] in [{}]".format(*entry))
+    # report results
 
-    print()
-    print("Please correct any spelling errors.")
-    print("If you want to use a field not currently in use, "
-          "please open an issue on GitHub.")
-    print("(https://github.com/lingbib/lingbib/issues)")
-    print()
+    if UNDOCUMENTED_ETYPES:
+        print("Found undocumented entry types:")
+        for entry in UNDOCUMENTED_ETYPES:
+            print("'{}'\tin [{}] in [{}]".format(*entry))
 
-if UNDOCUMENTED_KEYWORDS:
-    print("Found undocumented keywords:")
-    for entry in UNDOCUMENTED_KEYWORDS:
-        print("'{}'\tin [{}] in [{}]".format(*entry))
+        print()
+        print("Please correct any spelling errors.")
+        print("If you want to use a type not currently in use, "
+              "please open an issue on GitHub.")
+        print("(https://github.com/lingbib/lingbib/issues)")
+        print()
 
-    print()
-    print("Please change these keywords to match similar ones in the master list,")
-    print("or add them if necessary.")
-    print()
+    if UNDOCUMENTED_FIELDS:
+        print("Found undocumented fields:")
+        for entry in UNDOCUMENTED_FIELDS:
+            print("'{}'\tin [{}] in [{}]".format(*entry))
 
-if UNDOCUMENTED_ETYPES or UNDOCUMENTED_FIELDS or UNDOCUMENTED_KEYWORDS:
-    sys.exit(1)
+        print()
+        print("Please correct any spelling errors.")
+        print("If you want to use a field not currently in use, "
+              "please open an issue on GitHub.")
+        print("(https://github.com/lingbib/lingbib/issues)")
+        print()
+
+    if UNDOCUMENTED_KEYWORDS:
+        print("Found undocumented keywords:")
+        for entry in UNDOCUMENTED_KEYWORDS:
+            print("'{}'\tin [{}] in [{}]".format(*entry))
+
+        print()
+        print("Please change these keywords to match similar ones in the master list,")
+        print("or add them if necessary.")
+        print()
+
+    if UNDOCUMENTED_ETYPES or UNDOCUMENTED_FIELDS or UNDOCUMENTED_KEYWORDS:
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

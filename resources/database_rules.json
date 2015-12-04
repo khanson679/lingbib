@@ -1,4 +1,8 @@
 {
+    "entry-fields":{
+        "biblatex":["abstract", "author", "date", "doi", "editor", "eprint", "eprinttype", "ids", "indexsorttitle", "indextitle", "institution", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "journaltitle", "keywords", "langid", "location", "mainsubtitle", "maintitle", "number", "pages", "shortjournal", "shorttitle", "sortname", "subtitle", "title", "type", "volume", "xdata"],
+        "lingbib": ["keyoverride", "titlekeyword", "xdatatype"]
+        },
     "metatypes": {
         "regular-work": {
             "required": ["abstract", "author", "date", "keywords", "langid", "sortname", "title"],

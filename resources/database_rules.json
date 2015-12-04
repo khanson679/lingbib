@@ -1,20 +1,20 @@
 {
-	"metatypes": {
-		"regular-work": {
-			"required": ["abstract", "author", "date", "keywords", "langid", "sortname", "title"],
-			"if-applicable": ["subtitle"]
-		},
-		"collected-work": {
-			"required": ["abstract", "date", "editor", "keywords", "langid", "sortname", "title"],
-			"if-applicable": null
-		}
-	},
+    "metatypes": {
+        "regular-work": {
+            "required": ["abstract", "author", "date", "keywords", "langid", "sortname", "title"],
+            "if-applicable": ["subtitle"]
+        },
+        "collected-work": {
+            "required": ["abstract", "date", "editor", "keywords", "langid", "sortname", "title"],
+            "if-applicable": null
+        }
+    },
     "regular-types": {
         "article": {
             "metatype": "regular-work",
             "required": ["doi", "pages"],
-		    "if-applicable": ["eprint", "eprinttype", "ids", "shorttitle", "indextitle", "indexsorttitle"],
-		    "xdata": ["issue"]
+            "if-applicable": ["eprint", "eprinttype", "ids", "shorttitle", "indextitle", "indexsorttitle"],
+            "xdata": ["issue"]
         },
         "thesis": {
             "metatype": "regular-work",

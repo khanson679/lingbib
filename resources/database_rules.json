@@ -25,6 +25,11 @@
             "required": null,
             "if-applicable": null,
             "xdata": null
+        },
+        "xdata": {
+            "required": ["xdatatype"],
+            "if-applicable": null,
+            "xdata": null
         }
     },
     "xdata-types": {

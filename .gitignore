@@ -138,3 +138,6 @@ sympy-plots-for-*.tex/
 
 ### Backup files from lingbib app
 *.old
+
+### Auto-generated database files
+database/out

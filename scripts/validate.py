@@ -10,6 +10,7 @@ from __future__ import print_function
 import sys
 import os
 import glob
+import json
 from pprint import pprint
 
 # ensure 'bibtexparser' package installed
@@ -21,8 +22,9 @@ except ImportError as e:
     sys.exit(1)
 
 # files containing lists of allowed values
-ENTRY_TYPE_FILE = "resources/entry_types.txt"
-ENTRY_FIELD_FILE = "resources/entry_fields.txt"
+# ENTRY_TYPE_FILE = "resources/entry_types.txt"
+# ENTRY_FIELD_FILE = "resources/entry_fields.txt"
+RULES_FILE = "resources/database_rules.json"
 KEYWORD_FILE = "resources/keywords.txt"
 
 # sanity check
@@ -31,9 +33,11 @@ if not os.path.isfile(KEYWORD_FILE):
     print("Are you in the root of Lingbib?")
     sys.exit(1)
 
-# read files
-MASTER_ETYPE_LIST = set(line.strip() for line in open(ENTRY_TYPE_FILE))
-MASTER_FIELD_LIST = set(line.strip() for line in open(ENTRY_FIELD_FILE))
+# read filenames
+RULES = json.load(open(RULES_FILE))
+MASTER_ETYPE_LIST = set(t for t in RULES['entry-types'])
+MASTER_FIELD_LIST = set(RULES['entry-fields']['biblatex'] +
+                        RULES['entry-fields']['lingbib'])
 MASTER_KW_LIST = set(line.strip() for line in open(KEYWORD_FILE))
 
 # lists of tuples of form (undocumented item name, entry key, filename)
@@ -41,23 +45,21 @@ UNDOCUMENTED_ETYPES = []
 UNDOCUMENTED_FIELDS = []
 UNDOCUMENTED_KEYWORDS = []
 
+
 #
 # validation functions
 #
 # check contents of entries and record violations for report at the end
 #
 
-
 def check_entry_type(entry, filename):
     if entry['ENTRYTYPE'] not in MASTER_ETYPE_LIST:
         UNDOCUMENTED_ETYPES.append((entry['ENTRYTYPE'], entry['ID'], filename))
-
 
 def check_fields(entry, filename):
     for field in entry:
         if field not in MASTER_FIELD_LIST and field not in ('ID', 'ENTRYTYPE'):
             UNDOCUMENTED_FIELDS.append((field, entry['ID'], filename))
-
 
 def check_keywords(entry, filename):
     try:

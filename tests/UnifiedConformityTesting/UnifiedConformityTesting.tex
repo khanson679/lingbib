@@ -1,0 +1,114 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = arara
+% arara: pdflatex
+% arara: biber
+% arara: pdflatex: { synctex: yes }
+
+\documentclass{article}
+
+\usepackage{parskip}
+\usepackage{hanging}
+
+\usepackage[
+	backend=biber,
+	refsection=section,
+	% Install both of these styles from https://github.com/semprag/biblatex-sp-unified
+	bibstyle=biblatex-sp-unified,
+	citestyle=sp-authoryear-comp,
+	maxcitenames=3,
+	maxbibnames=99
+]{biblatex}
+\addbibresource{../../lingbib-master.bib}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+       \step[fieldsource=sortname]
+       \step[fieldset=namea, origfieldval, final]
+    }
+  }
+}
+
+\DeclareLabelname{
+    \field{namea}
+    \field{shortauthor}
+    \field{author}
+    \field{shorteditor}
+    \field{editor}
+    \field{translator}
+}
+
+\setlength{\bibhang}{15pt}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=cyan
+}
+
+\newcommand*{\Lingbib}{\href{http://lingbib.org/}{Lingbib}}
+\newcommand*{\SP}{\emph{Semantics \& Pragmatics}}
+\newcommand*{\UnifiedStyleSheet}{\href{http://celxj.org/downloads/UnifiedStyleSheet.pdf}{Unified Stylesheet for Linguistics}}
+\newcommand*{\SPUnified}{\href{https://github.com/semprag/biblatex-sp-unified/}{\Package{biblatex-sp-unified}}}
+
+\newcommand*{\Package}[1]{\texttt{#1}}
+
+\title{Testing document for checking conformity to the \UnifiedStyleSheet}
+\author{\Lingbib}
+\date{Last updated: \today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a testing document for checking whether entries in the \Lingbib{} database will be formatted in accordance with the guidelines in the \UnifiedStyleSheet{} when printed in a \LaTeX{} document using  \SP' \href{https://github.com/semprag/biblatex-sp-unified/}{\Package{biblatex} implementation of the Unified Stylesheet for Linguistics (\Package{biblatex-sp-unified})}.
+\end{abstract}
+
+\section{Journal articles}
+
+\subsection{Exemplars}
+
+\begin{hangparas}{15pt}{1}
+
+Iverson, Gregory K. 1983. Korean /s/. \textit{Journal of Phonetics} 11. 191--200.
+
+Iverson, Gregory K. 1989. On the category supralaryngeal. \textit{Phonology} 6. 285--303.
+
+Johson, Kyle, Mark Baker \& Ian Roberts. 1989. Passive arguments raised. \textit{Linguistic Inquiry} 20. 219--251.
+
+Murray, Robert W. \& Theo Vennemann. 1983. Sound change and syllable structure in Germanic phonology. \textit{Language} 59(3). 514--528.
+
+\end{hangparas}
+
+\subsection{Output of \Lingbib{} database + \SPUnified}
+
+\nocite{chomsky2013:projection}
+
+\printbibliography[
+	heading=none
+]
+
+\section{Dissertations}
+
+\subsection{Exemplars}
+
+\begin{hangparas}{15pt}{1}
+
+Stewart, Thomas W., Jr. 2000. \textit{Mutation as morphology: Bases, stems, and shapes in Scottish Gaelic}. Columbus, OH: The Ohio State University dissertation.
+
+Yu, Alan C.~L. 2003. \textit{The morphology and phonology of infixation}. Berkeley, CA: University of California dissertation.
+
+\end{hangparas}
+
+\subsection{Output of \Lingbib{} database + \SPUnified}
+
+\nocite{munn1993:coordinate}
+
+\printbibliography[
+	heading=none
+]
+
+\end{document}

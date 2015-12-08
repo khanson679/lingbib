@@ -76,6 +76,6 @@ You can also report problems and bugs as well as suggest improvements via [GitHu
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [issues]: https://github.com/lingbib/lingbib/issues
 [uss-biblatex]: https://github.com/semprag/biblatex-sp-unified
-[uss]: celxj.org/downloads/UnifiedStyleSheet.pdf
+[uss]: http://celxj.org/downloads/UnifiedStyleSheet.pdf
 [wiki]: https://github.com/lingbib/lingbib/wiki
 [email]: mailto:adam.liter@gmail.com,khanson679@gmail.com

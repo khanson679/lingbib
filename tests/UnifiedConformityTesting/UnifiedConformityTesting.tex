@@ -20,6 +20,8 @@
 ]{biblatex}
 \addbibresource{../../release/lingbib-master.bib}
 
+% retain "sortname" field as "namea" for use in "labelname"
+% necessary because "sortname" is not passed on by Biber
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
     \map{
@@ -59,6 +61,8 @@
 \author{\Lingbib}
 \date{Last updated: \today}
 
+
+
 \begin{document}
 
 \maketitle
@@ -66,6 +70,8 @@
 \begin{abstract}
 This is a testing document for checking whether entries in the \Lingbib{} database will be formatted in accordance with the guidelines in the \UnifiedStyleSheet{} when printed in a \LaTeX{} document using  \SP' \href{https://github.com/semprag/biblatex-sp-unified/}{\Package{biblatex} implementation of the Unified Stylesheet for Linguistics (\Package{biblatex-sp-unified})}.
 \end{abstract}
+
+
 
 \section{Journal articles}
 
@@ -91,6 +97,8 @@ Murray, Robert W. \& Theo Vennemann. 1983. Sound change and syllable structure i
 	heading=none
 ]
 
+
+
 \section{Dissertations}
 
 \subsection{Exemplars}
@@ -110,5 +118,7 @@ Yu, Alan C.~L. 2003. \textit{The morphology and phonology of infixation}. Berkel
 \printbibliography[
 	heading=none
 ]
+
+
 
 \end{document}

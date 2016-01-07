@@ -1,6 +1,6 @@
 {
     "entry-fields":{
-        "biblatex":["abstract", "author", "date", "doi", "editor", "eprint", "eprinttype", "ids", "indexsorttitle", "indextitle", "institution", "isbn", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "journaltitle", "keywords", "langid", "location", "mainsubtitle", "maintitle", "number", "pages", "publisher", "shortjournal", "shorttitle", "sortname", "subtitle", "title", "type", "volume", "xdata"],
+        "biblatex":["abstract", "author", "date", "doi", "editor", "eprint", "eprinttype", "ids", "indexsorttitle", "indextitle", "institution", "isbn", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "journaltitle", "keywords", "langid", "location", "mainsubtitle", "maintitle", "number", "pages", "publisher", "series", "shortjournal", "shorttitle", "sortname", "subtitle", "title", "type", "volume", "xdata"],
         "lingbib": ["keyoverride", "titlekeyword", "xdatatype"]
         },
     "entry-metatypes": {
@@ -23,7 +23,7 @@
         "book": {
             "metatype": "regular-work",
             "required": ["isbn", "publisher", "location"],
-            "if-applicable": null
+            "if-applicable": ["series", "number"] 
         },
         "thesis": {
             "metatype": "regular-work",

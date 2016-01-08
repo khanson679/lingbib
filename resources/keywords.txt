@@ -1,5 +1,6 @@
 Across-the-Board movement
 bare noun phrase
+binding theory
 Brazilian Portuguese
 conjunction
 Coordinate Structure Constraint
@@ -9,6 +10,7 @@ DP hypothesis
 French
 gerunds
 labeling
+language acquisition
 linguistics
 Merge
 minimal computation

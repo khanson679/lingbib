@@ -1,0 +1,47 @@
+# People
+---
+
+alan_munn: &alan_munn
+  first: Alan
+  middle: Boag
+  last: Munn
+  lineage: ""
+  sortname: Munn, Alan 
+  url: "https://msu.edu/~amunn/"
+  orcid: ""
+
+cristina_schmitt: &cristina_schmitt
+  first: Cristina
+  middle: Job
+  last: Schmitt
+  lineage: ""
+  sortname: Schmitt, Cristina
+  url: "http://msuacquisition.wordpress.com/"
+  orcid: ""
+
+hagit_borer: &hagit_borer
+  first: Hagit
+  middle: ""
+  last: Borer
+  lineage: ""
+  sortname: Borer, Hagit
+  url: "http://webspace.qmul.ac.uk/hborer/"
+  orcid: ""
+
+noam_chomsky: &noam_chomsky
+  first: Noam
+  middle: ""
+  last: Chomsky
+  lineage: ""
+  sortname: Chomsky, Noam
+  url: "http://web.mit.edu/linguistics/people/faculty/chomsky/"
+  orcid: ""
+
+steven_abney: &steven_abney
+  first: Steven
+  middle: Paul
+  last: Abney
+  lineage: ""
+  sortname: Abney, Steven
+  url: "http://www.vinartus.net/spa/index.html"
+  orcid: ""
